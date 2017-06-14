@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    $.onload(function () {
+        $('.navbar-toggle').click();
+    });
+
 
     $(window).scroll(function() {
         if ($(".navbar").offset().top > 50) {
@@ -27,6 +31,7 @@ $(document).ready(function() {
             }
         });
     });
+
 
 
 // Closes the Responsive Menu on Menu Item Click
