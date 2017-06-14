@@ -1,0 +1,75 @@
+$maw: 940px;
+
+$Monteserrat: 'Montserrat', sans-serif;
+$OpenSans: 'Open Sans', sans-serif;
+$fontRight: 'Righteous', cursive;
+$darkBlue: #263238;
+$lightBlue: #37474F;
+
+$softBlue: #A2CBF4;
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  width:100%;
+
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: $Monteserrat, $OpenSans,Arial,sans-serif;
+  color: #fff;
+  background-color: #263238;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: $Monteserrat,$OpenSans,sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+ul{
+  list-style: none;
+}
+
+p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+a {
+  color: $softBlue;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #C4CCD5;
+}
+
+.decoration-red{
+  color: #ff3a0f;
+}
+

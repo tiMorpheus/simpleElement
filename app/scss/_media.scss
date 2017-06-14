@@ -1,0 +1,84 @@
+$minWidth: 767px;
+
+@media(min-width: $minWidth) {
+  p {
+    margin: 0 0 50px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .intro-custom {
+
+    height: 100% !important;
+    padding: 0 !important;
+
+    h1.brand-heading {
+      font-size: 50px !important;
+      font-family: $fontRight;
+      letter-spacing: 5px;
+    }
+
+    .intro-body {
+      .brand-heading {
+        font-size: 60px;
+        transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -moz-transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+      }
+
+      .into-text {
+        font-size: 25px;
+        transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -moz-transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+      }
+    }
+
+  }
+
+  .content-section {
+
+    .about-content-big {
+      padding: 150px 0 !important;
+    }
+
+    .col-small-features {
+      height: 483px;
+    }
+
+    .col-small:hover {
+
+      -moz-box-shadow: inset 0 0 10px #000000;
+      -webkit-box-shadow: inset 0 0 10px #000000;
+      box-shadow: inset 0 0 10px #000000;
+
+    }
+  }
+
+  .download-section {
+    padding: 120px 0 !important;
+  }
+  .btn2 {
+    margin: 20px 0;
+    font-size: 40px !important;
+    line-height: 94px !important;
+    color: white !important;
+  }
+
+  #contact {
+    padding: 100px 0 !important;
+
+  }
+  #map {
+    height: 400px !important;
+  }
+
+  footer{
+   padding-top: 40px !important;
+  }
+}
+

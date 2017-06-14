@@ -1,0 +1,93 @@
+
+.btn2 {
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  line-height: 14px;
+  background: #25292C;
+  margin: 0px auto;
+  text-align: center;
+  border-radius: 999px;
+  color: rgba(155,155,155,1);
+  text-shadow: -1px -1px 0px rgba(255,255,255,0.8), 1px 1px 2px rgba(0,0,0,1);
+  font-size: 5em;
+  font-family: sans-serif;
+  box-shadow: inset 1px 1px 2px rgba(255,255,255,0.3),
+  inset 3px 15px 45px rgba(255,255,255,0.1),
+  inset -1px -1px 2px rgba(0,0,0,0.5),
+  inset -3px -15px 45px rgba(0,0,0,0.2),
+  1px 5px 30px -4px rgba(0,0,0,1);
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition:    0.1s ease-out;
+  -o-transition:      0.1s ease-out;
+  transition:         0.1s ease-out;
+}
+
+.btn2:active {
+  color: rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.15);
+  box-shadow: inset 1px 1px 2px rgba(255,255,255,0.3),
+  inset 3px 15px 45px rgba(0,0,0,0.2),
+  inset -1px -1px 2px rgba(0,0,0,0.5),
+  inset -3px -15px 45px rgba(255,255,255,0.1),
+  1px 5px 10px -4px rgba(0,0,0,1);
+}
+
+.blob, .blob:before {
+  -webkit-animation: blob 1s linear;
+  -moz-animation:    blob 1s linear;
+  -o-animation:      blob 1s linear;
+  animation:         blob 1s linear;
+}
+
+.blob {
+  color: rgba(0,00,0,0.7);
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.15);
+  box-shadow: inset 1px 1px 2px rgba(255,255,255,0.3),
+  inset 3px 15px 45px rgba(0,0,0,0.2),
+  inset -1px -1px 2px rgba(0,0,0,0.5),
+  inset -3px -15px 45px rgba(255,255,255,0.1),
+  1px 5px 10px -4px rgba(0,0,0,1);
+}
+
+@-webkit-keyframes blob {
+  0%   { border-radius: 999px 999px; }
+  5%   { border-radius: 999px 200px; }
+  22%  { border-radius: 400px 999px; }
+  34%  { border-radius: 999px 700px; }
+  48%  { border-radius: 700px 999px; }
+  70%  { border-radius: 999px 999px; }
+  85%  { border-radius: 850px 999px; }
+  100% { border-radius: 999px 999px; }
+}
+@-moz-keyframes    blob {
+  0%   { border-radius: 999px 999px; }
+  5%   { border-radius: 999px 200px; }
+  22%  { border-radius: 400px 999px; }
+  34%  { border-radius: 999px 700px; }
+  48%  { border-radius: 700px 999px; }
+  70%  { border-radius: 999px 999px; }
+  85%  { border-radius: 850px 999px; }
+  100% { border-radius: 999px 999px; }
+}
+@-o-keyframes      blob {
+  0%   { border-radius: 999px 999px; }
+  5%   { border-radius: 999px 200px; }
+  22%  { border-radius: 400px 999px; }
+  34%  { border-radius: 999px 700px; }
+  48%  { border-radius: 700px 999px; }
+  70%  { border-radius: 999px 999px; }
+  85%  { border-radius: 850px 999px; }
+  100% { border-radius: 999px 999px; }
+}
+@keyframes         blob {
+  0%   { border-radius: 999px 999px; }
+  5%   { border-radius: 999px 200px; }
+  22%  { border-radius: 400px 999px; }
+  34%  { border-radius: 999px 700px; }
+  48%  { border-radius: 700px 999px; }
+  70%  { border-radius: 999px 999px; }
+  85%  { border-radius: 850px 999px; }
+  100% { border-radius: 999px 999px; }
+}
