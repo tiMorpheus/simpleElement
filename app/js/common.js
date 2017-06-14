@@ -39,7 +39,7 @@ $(document).ready(function() {
 
 
     // resize stuff
-    $.resize(function(){
+    $().resize(function(){
         $('[data-spy="scroll"]').each(function () {
             var $spy = $(this).scrollspy('refresh');
         });
