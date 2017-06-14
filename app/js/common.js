@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
-    $.onload(function () {
-        $('.navbar-toggle').click();
-    });
+
 
 
     $(window).scroll(function() {
@@ -41,7 +39,7 @@ $(document).ready(function() {
 
 
     // resize stuff
-    $().resize(function(){
+    $.resize(function(){
         $('[data-spy="scroll"]').each(function () {
             var $spy = $(this).scrollspy('refresh');
         });
