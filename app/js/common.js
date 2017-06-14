@@ -32,7 +32,7 @@ $(document).ready(function() {
         $('.navbar-toggle:visible').click();
     });
 
-    
+
     // resize stuff
     $(window).resize(function(){
         $('[data-spy="scroll"]').each(function () {
