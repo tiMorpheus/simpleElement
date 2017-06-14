@@ -11,19 +11,21 @@ $(document).ready(function() {
 
 
 // inizialize bookmark
-    var current = window.location.hash ? window.location.hash : '#home';
+    var current = window.location.hash ? window.location.hash : '#intro';
     $('.nav a[href=' + current + ']').parent().addClass('active');
 
+
+
+
     // click and go
-    $('.nav a').click(function(e){
-        e.preventDefault();
+    $('.nav a').click(function(){
         var current = $(this).attr('href');
         $.scrollTo(current, 1000, {
             easing: 'easeInOutCubic',
             onAfter: function(){
                 location.hash = current;
             }
-        })
+        });
     });
 
 
@@ -34,7 +36,7 @@ $(document).ready(function() {
 
 
     // resize stuff
-    $(window).resize(function(){
+    $().resize(function(){
         $('[data-spy="scroll"]').each(function () {
             var $spy = $(this).scrollspy('refresh');
         });
@@ -47,7 +49,6 @@ $(document).ready(function() {
     $('.btn-blob').click(function() {
         $(this).toggleClass('blob');
     });
-
 
 
 // Google Maps Scripts
@@ -197,6 +198,7 @@ $(document).ready(function() {
             icon: image
         });
     }
+
 });
 
 
