@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Righteous");
+@font-face {
+  font-family: "LogotypeFont";
+  src: url("../fonts/sirclive.ttf"); }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -16,7 +20,6 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Montserrat", sans-serif, "Open Sans", sans-serif, Arial, sans-serif;
-  color: #fff;
   background-color: #263238; }
 
 h1,
@@ -209,6 +212,9 @@ a:focus {
   100% {
     border-radius: 999px 999px; } }
 
+.logotypenav {
+  font-family: "LogotypeFont"; }
+
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -216,6 +222,10 @@ a:focus {
   background-color: #263238; }
   .navbar-custom a {
     color: white; }
+  .navbar-custom .nav-logo {
+    line-height: 50px; }
+  .navbar-custom .logotypenav {
+    font: 30px  "LogotypeFont"; }
   .navbar-custom .navbar-toggle {
     padding: 4px 20px;
     font-size: 20px;
@@ -233,6 +243,8 @@ a:focus {
     -webkit-transition: background-color 0.3s ease-in-out;
     -moz-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out; }
+    .navbar-custom .nav li i {
+      font-size: 20px; }
     .navbar-custom .nav li:hover {
       background-color: rgba(255, 255, 255, 0.3); }
     .navbar-custom .nav li a {
@@ -244,52 +256,45 @@ a:focus {
         outline: 0;
         background-color: rgba(255, 255, 255, 0.3); }
 
-.intro-custom {
-  display: table;
+.intro-custom #owldemo img {
+  display: block;
   width: 100%;
-  height: auto;
-  padding: 100px 0;
-  text-align: center;
-  background: #263238 url("../img/intro-bg.jpg") no-repeat bottom center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; }
-  .intro-custom .intro-body {
-    display: table-cell;
-    vertical-align: middle; }
-    .intro-custom .intro-body .brand-heading {
-      font-size: 40px; }
-    .intro-custom .intro-body .into-text {
-      font-size: 18px; }
-      .intro-custom .intro-body .into-text a {
-        text-transform: uppercase;
-        -webkit-transition: font-size 0.3s ease-in-out;
-        -moz-transition: font-size 0.3s ease-in-out;
-        transition: font-size 0.3s ease-in-out; }
-        .intro-custom .intro-body .into-text a:hover {
-          font-size: 22px; }
-    .intro-custom .intro-body .nav .btn-down {
-      font-size: 80px;
-      color: #fff;
-      opacity: 0.8; }
-      .intro-custom .intro-body .nav .btn-down:hover i.animated {
-        -webkit-animation-name: pulse;
-        -moz-animation-name: pulse;
-        -webkit-animation-duration: 1.5s;
-        -moz-animation-duration: 1.5s;
-        -webkit-animation-iteration-count: infinite;
-        -moz-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-        -moz-animation-timing-function: linear; }
-      .intro-custom .intro-body .nav .btn-down:hover, .intro-custom .intro-body .nav .btn-down:focus {
-        outline: 0;
-        color: #A2CBF4; }
-      .intro-custom .intro-body .nav .btn-down i.animated {
-        -webkit-transition-property: -webkit-transform;
-        -webkit-transition-duration: 1s;
-        -moz-transition-property: -moz-transform;
-        -moz-transition-duration: 1s; }
+  height: auto; }
+
+.intro-custom .intro-body {
+  vertical-align: middle; }
+  .intro-custom .intro-body .brand-heading {
+    font-size: 40px; }
+  .intro-custom .intro-body .into-text {
+    font-size: 18px; }
+    .intro-custom .intro-body .into-text a {
+      text-transform: uppercase;
+      -webkit-transition: font-size 0.3s ease-in-out;
+      -moz-transition: font-size 0.3s ease-in-out;
+      transition: font-size 0.3s ease-in-out; }
+      .intro-custom .intro-body .into-text a:hover {
+        font-size: 22px; }
+  .intro-custom .intro-body .nav .btn-down {
+    font-size: 80px;
+    color: #fff;
+    opacity: 0.8; }
+    .intro-custom .intro-body .nav .btn-down:hover i.animated {
+      -webkit-animation-name: pulse;
+      -moz-animation-name: pulse;
+      -webkit-animation-duration: 1.5s;
+      -moz-animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -moz-animation-timing-function: linear; }
+    .intro-custom .intro-body .nav .btn-down:hover, .intro-custom .intro-body .nav .btn-down:focus {
+      outline: 0;
+      color: #A2CBF4; }
+    .intro-custom .intro-body .nav .btn-down i.animated {
+      -webkit-transition-property: -webkit-transform;
+      -webkit-transition-duration: 1s;
+      -moz-transition-property: -moz-transform;
+      -moz-transition-duration: 1s; }
 
 @media (min-width: 767px) {
   .navbar {
@@ -302,12 +307,12 @@ a:focus {
     transition: background .5s ease-in-out, padding .5s ease-in-out; }
   .top-nav-collapse {
     padding: 0 !important;
-    background-color: rgba(38, 50, 56, 0.95) !important; } }
+    background-color: black !important; } }
 
 .content-section {
   text-align: center; }
   .content-section .about-content-big {
-    background: #192024;
+    background: white;
     padding: 70px 0; }
     .content-section .about-content-big .brand-heading {
       font-size: 35px; }

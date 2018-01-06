@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+    $('.owl-carousel').owlCarousel({
+
+        nav : true, // показывать кнопки next и prev
+        items: 1,
+
+
+    });
 
 
 

@@ -4,6 +4,10 @@
 @import "media";
 @import "btnblob";
 
+.logotypenav{
+  font-family: "LogotypeFont";
+}
+
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, .3);
@@ -12,6 +16,13 @@
 
   a {
     color: white;
+  }
+
+  .nav-logo{
+    line-height: 50px;
+  }
+  .logotypenav{
+    font: 30px  "LogotypeFont";
   }
 
   .navbar-toggle {
@@ -40,6 +51,9 @@
       -webkit-transition: background-color 0.3s ease-in-out;
       -moz-transition: background-color 0.3s ease-in-out;
       transition: background-color 0.3s ease-in-out;
+      i{
+        font-size: 20px;
+      }
 
       &:hover {
         background-color: rgba(255, 255, 255, .3);
@@ -64,19 +78,19 @@
 }
 
 .intro-custom {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 100px 0;
-  text-align: center;
-  background: #263238 url("../img/intro-bg.jpg") no-repeat bottom center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+
+
+  #owldemo{
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
 
   .intro-body {
-    display: table-cell;
     vertical-align: middle;
 
     .brand-heading {
@@ -151,7 +165,7 @@
 
   .top-nav-collapse {
       padding: 0 !important;
-      background-color: rgba(38, 50, 56, 0.95) !important;
+      background-color: black !important;
   }
 
 }
@@ -162,7 +176,7 @@
   .about- {
 
     &content-big {
-      background: #192024;
+      background: white;
       padding: 70px 0;
 
       .brand-heading{
